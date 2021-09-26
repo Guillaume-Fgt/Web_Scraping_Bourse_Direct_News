@@ -6,7 +6,7 @@ txt_path_Hyperlinks = "Web_Scraping_Bouse_Direct_Hyperlinks.txt"
 
 
 def update_txt_file(data, file_name):
-    # write data to a text file
+    '''Write data to a text file.'''
     with open(file_name, "a", encoding='utf-8') as f:
         f.write(data + "\n")
 
