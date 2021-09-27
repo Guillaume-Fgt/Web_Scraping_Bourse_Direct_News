@@ -17,9 +17,9 @@ def get_page_html():
     # scrap the targeted website and return desired data in a tuple form
     url = "https://www.boursedirect.fr/fr/actualites/flux/aujourdhui"
     headers = {
-        "User-Agent": """Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-                         AppleWebKit/537.36 (KHTML, like Gecko)
-                         Chrome/83.0.4103.116 Safari/537.36"""
+        "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+                         "AppleWebKit/537.36 (KHTML, like Gecko)"
+                         "Chrome/83.0.4103.116 Safari/537.36")
     }
     page = requests.get(url, headers=headers)
     soup = BeautifulSoup(page.content, "html.parser")
